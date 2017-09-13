@@ -71,7 +71,6 @@ module.exports = function(grunt) {
   ////////////////////////////////////////////////////
   // Main grunt tasks
   ////////////////////////////////////////////////////
-
   grunt.registerTask('test', [
     'mochaTest'
   ]);
@@ -91,5 +90,6 @@ module.exports = function(grunt) {
     // add your deploy tasks here
   ]);
 
+  grunt.registerTask('default', ['nodemon']);
 
 };
