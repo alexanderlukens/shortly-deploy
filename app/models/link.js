@@ -14,7 +14,6 @@ var LinkSchema = new mongoose.Schema({
   },
   code: {
     type: Number,
-    required: true
   },
   title: {
     type: String,
