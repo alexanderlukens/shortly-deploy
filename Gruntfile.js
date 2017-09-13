@@ -90,6 +90,6 @@ module.exports = function(grunt) {
     // add your deploy tasks here
   ]);
 
-  grunt.registerTask('default', [process.env.PORT]);
+  grunt.registerTask('default', ['test']);
 
 };
