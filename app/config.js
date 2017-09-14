@@ -1,6 +1,6 @@
 const path = require('path');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://alex:AaAa2222@ds015478.mlab.com:15478/shortly-deploy', {useMongoClient:true});
+mongoose.connect('mongodb://test:test@ds015478.mlab.com:15478/shortly-deploy', {useMongoClient:true});
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));

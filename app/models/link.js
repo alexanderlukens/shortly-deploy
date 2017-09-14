@@ -9,8 +9,7 @@ var LinkSchema = new mongoose.Schema({
     required: true
   },
   baseUrl: {
-    type: String,
-    required: true
+    type: String
   },
   code: {
     type: Number,
