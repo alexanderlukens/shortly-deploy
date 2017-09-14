@@ -21,6 +21,11 @@ module.exports = function(grunt) {
     },
 
     uglify: {
+       my_target: {
+         files: {
+        'dest/output.min.js': ['public/client/*.js']
+      }
+    }
     },
 
     eslint: {
@@ -51,6 +56,7 @@ module.exports = function(grunt) {
 
     shell: {
       prodServer: {
+        command: 'git push heroku master'
       }
     },
   });
@@ -86,9 +92,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('deploy', [
-    // add your deploy tasks here
-  ]);
+  grunt.registerTask('deploy', ['uglify','shell:prodServer']);
 
   grunt.registerTask('default', ['test']);
 
